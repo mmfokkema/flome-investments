@@ -1,0 +1,6 @@
+# Local only: design explorations and tooling, not part of the live site
+mockups/
+logo-varianten.html
+upload/
+.claude/
+.DS_Store

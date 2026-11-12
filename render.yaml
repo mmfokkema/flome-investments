@@ -1,0 +1,17 @@
+# Render Blueprint: free static site, published straight from the repo root.
+services:
+  - type: web
+    name: flome-investments
+    runtime: static
+    buildCommand: echo "No build step"
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
+    domains:
+      - flomeinvestments.com
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
